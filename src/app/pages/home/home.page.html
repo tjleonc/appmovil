@@ -1,16 +1,27 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>home</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
 
-  <ion-button routerLink="/perfil">
-    Ir a Perfil
-  </ion-button>
-
-
+  <ion-card class="card">
+    <ion-card-title class="ion-text-center">
+      B I E N V E N I D O
+    </ion-card-title>
+    <ion-card-subtitle class="ion-text-center">
+      Escoge una opcion
+    </ion-card-subtitle>
+    <ion-card-content>
+      <div class="opciones">
+        <ion-button color="secondary" expand="block" routerLink="/login-profesor">
+          <ion-text color="tertiary">
+            <b>SOY UN DOCENTE</b>
+          </ion-text>
+        </ion-button>
+        <ion-button color="tertiary" expand="block" routerLink="/login-alumno">
+          <ion-text color="secondary" >
+            <b>SOY UN ESTUDIANTE</b>
+          </ion-text>
+        </ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
 
 
 
