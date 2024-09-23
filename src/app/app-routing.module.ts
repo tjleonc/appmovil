@@ -22,7 +22,25 @@ const routes: Routes = [
   {
     path: 'login-profesor',
     loadChildren: () => import('./pages/login-profesor/login-profesor.module').then( m => m.LoginProfesorPageModule)
-  }
+  },
+  {
+    path: 'home-profesor',
+    loadChildren: () => import('./pages/home-profesor/home-profesor.module').then( m => m.HomeProfesorPageModule)
+  },
+  {
+    path: 'asistencia',
+    loadChildren: () => import('./pages/asistencia/asistencia.module').then( m => m.AsistenciaPageModule)
+  },
+  {
+    path: 'ingresar-asignatura',
+    loadChildren: () => import('./pages/ingresar-asignatura/ingresar-asignatura.module').then( m => m.IngresarAsignaturaPageModule)
+  },
+  {
+    path: 'ver-asistencia',
+    loadChildren: () => import('./pages/ver-asistencia/ver-asistencia.module').then( m => m.VerAsistenciaPageModule)
+  },
+
+
 ];
 
 @NgModule({

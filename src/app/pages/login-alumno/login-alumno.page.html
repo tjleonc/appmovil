@@ -1,13 +1,29 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>loginAlumno</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-encabezado></app-encabezado>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">loginAlumno</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+
+
+    <ion-card class="login-card">
+
+      <ion-card-title class="ion-text-center title">
+        HOLA ALUMNO 
+      </ion-card-title>
+      <ion-item lines="none" class="input-item">
+        <ion-input label="Correo" type="email" label-placement="floating"  placeholder="email@example.com" fill="solid"></ion-input>
+      </ion-item>
+
+      <ion-item lines="none" class="input-item">
+        <ion-input label="Contraseña" type="password" label-placement="floating"  placeholder="***********" fill="solid"></ion-input>
+      </ion-item>
+      <ion-link routerLink="/recuperacion-contrasena">
+        <h5>Olvidaste la contraseña?</h5>
+      </ion-link>
+
+      <ion-button expand="block" class="login-button">
+        INGRESAR
+      </ion-button>
+    </ion-card>
+
+
+
 </ion-content>

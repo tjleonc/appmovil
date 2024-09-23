@@ -11,16 +11,25 @@
         HOLA PROFESOR 
       </ion-card-title>
       <ion-item lines="none" class="input-item">
-        <ion-input label="Correo" type="email" label-placement="floating"  placeholder="email@example.com" fill="solid"></ion-input>
+        <ion-input label="Correo" type="email" label-placement="floating"  placeholder="email@example.com" fill="solid" [(ngModel)]="pEmail"></ion-input>
       </ion-item>
 
       <ion-item lines="none" class="input-item">
-        <ion-input label="Contraseña" type="password" label-placement="floating"  placeholder="***********" fill="solid"></ion-input>
+        <ion-input label="Contraseña" type="password" label-placement="floating"  placeholder="***********" fill="solid" [(ngModel)]="pPassword"></ion-input>
       </ion-item>
 
-      <ion-button expand="block" class="login-button">
+      <ion-button (click)="loginProfesor()" expand="block" class="login-button">
         INGRESAR
       </ion-button>
+
+      <ion-button class="forgetpass" id="open-forgetpass">Recuperar contraseña</ion-button>
+      <ion-alert
+        trigger="open-forgetpass"
+        header="Porfavor ingresa tu email"
+        [buttons]="alertButtons"
+        [inputs]="alertInputs"
+      ></ion-alert>
+
     </ion-card>
 
 
