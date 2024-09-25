@@ -1,0 +1,15 @@
+<app-encabezado></app-encabezado>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Ingrese el texto o URL para el QR</ion-label>
+    <ion-input [(ngModel)]="qrData"></ion-input>
+  </ion-item>
+
+  <ion-button expand="block" (click)="generateQRCode()">Generar QR</ion-button>
+
+  <!-- Mostrar el código QR generado -->
+  <div *ngIf="qrImage">
+    <img [src]="qrImage" alt="QR Code">
+  </div>
+</ion-content>

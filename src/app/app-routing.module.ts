@@ -38,7 +38,11 @@ const routes: Routes = [
   {
     path: 'ver-asistencia',
     loadChildren: () => import('./pages/ver-asistencia/ver-asistencia.module').then( m => m.VerAsistenciaPageModule)
+  },  {
+    path: 'qr',
+    loadChildren: () => import('./pages/qr/qr.module').then( m => m.QrPageModule)
   },
+
 
 
 ];

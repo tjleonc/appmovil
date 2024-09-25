@@ -92,7 +92,7 @@ export class LoginProfesorPage implements OnInit {
 }
 async presentAlert(msg:string) {
   const alert = await this.alertController.create({
-    header: 'Email Enviado',
+    header: 'Aviso',
     message: msg,
     buttons: ['Aceptar'],
   });

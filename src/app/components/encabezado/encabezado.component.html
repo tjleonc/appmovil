@@ -1,8 +1,10 @@
 <ion-header>
   <ion-toolbar color="primary">
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/home" text="Volver" color="light"></ion-back-button>
+      <ion-button (click)="goBack()">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
     </ion-buttons>
-    <ion-title class="ion-text-capitalize ion-text-center" color="light" mode="md">{{titulo}}</ion-title>
+
   </ion-toolbar>
 </ion-header> 
