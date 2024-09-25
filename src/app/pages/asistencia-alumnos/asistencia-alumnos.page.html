@@ -1,0 +1,16 @@
+<app-encabezado></app-encabezado>
+
+  <ion-content>
+    <div class="asistencia-aviso">
+      <p>Recuerda: Debes mantener una asistencia por encima del 80%.</p>
+    </div>
+    <ion-list>
+      <ion-item color="tertiary" *ngFor="let asignatura of asignaturas" class="asignatura-item">
+        <ion-label color="tertiary">
+          <strong><h2>{{ asignatura.nombre }}</h2></strong>
+          <strong><p class="codigo">{{ asignatura.codigo }}</p></strong>
+          <strong><p class="asistencia">{{ asignatura.asistencia }}% ({{ asignatura.clasesAsistidas }} DE {{ asignatura.clasesTotales }} CLASES)</p></strong>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>

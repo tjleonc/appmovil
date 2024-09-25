@@ -38,7 +38,23 @@ const routes: Routes = [
   {
     path: 'ver-asistencia',
     loadChildren: () => import('./pages/ver-asistencia/ver-asistencia.module').then( m => m.VerAsistenciaPageModule)
+  },  {
+    path: 'home-alumnos',
+    loadChildren: () => import('./pages/home-alumnos/home-alumnos.module').then( m => m.HomeAlumnosPageModule)
   },
+  {
+    path: 'asistencia-alumnos',
+    loadChildren: () => import('./pages/asistencia-alumnos/asistencia-alumnos.module').then( m => m.AsistenciaAlumnosPageModule)
+  },
+  {
+    path: 'registrar-asistencia',
+    loadChildren: () => import('./pages/registrar-asistencia/registrar-asistencia.module').then( m => m.RegistrarAsistenciaPageModule)
+  },
+  {
+    path: 'qr',
+    loadChildren: () => import('./pages/qr/qr.module').then( m => m.QrPageModule)
+  },
+
 
 
 ];

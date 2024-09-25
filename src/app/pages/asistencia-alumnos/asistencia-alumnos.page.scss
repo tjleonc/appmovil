@@ -1,0 +1,43 @@
+ion-content {
+  --ion-background-color: #07012B; /* Fondo oscuro */
+  height: 100%;
+  color: white;
+}
+
+.asistencia-aviso {
+  background-color: #212040;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.asignatura-item {
+  margin: 7px 0; /* Espaciado entre elementos */
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out; /* Transición suave para el zoom */
+  box-shadow: 0 8px 12px rgba(3, 0, 29, 0.796); /* Sombra para destacar los items */
+}
+
+.asignatura-item:hover,
+.asignatura-item:active {
+  transform: scale(1.03); /* Pequeño zoom al hacer hover o clic */
+}
+
+h2 {
+  font-size: 18px; /* Tamaño de letra para el nombre */
+  margin: 0;
+  color: #4b3bc0;
+  font-weight: bold;
+}
+
+.codigo, .asistencia {
+  font-size: 14px; /* Tamaño de letra */
+  color: #4b3bc0; /* Color gris para los subtítulos */
+}
+
+.asignatura-item ion-label {
+  padding-left: 10px;
+}
