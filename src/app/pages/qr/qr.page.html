@@ -1,27 +1,15 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title color="light">Escanear QR</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-encabezado></app-encabezado>
 
 <ion-content>
-  <div class="asistencia-aviso">
-    <h2>Aqui se abriria la camara, la aplicacion pedira obligatoriamente la ubicacion en tiempo real y la camara.</h2>
-    <img src="assets/images/qr_image.jpeg" alt="">
-  </div>
+  <ion-item>
+    <ion-label position="floating">Ingrese el texto o URL para el QR</ion-label>
+    <ion-input [(ngModel)]="qrData"></ion-input>
+  </ion-item>
 
-  <!-- Botón de éxito -->
-  <ion-button expand="block" (click)="mostrarMensaje('Código QR validado, asistencia confirmada.', true)" color="success" class="ion-margin">
-    Simular Éxito
-  </ion-button>
+  <ion-button expand="block" (click)="generateQRCode()">Generar QR</ion-button>
 
-  <!-- Botón de fallo -->
-  <ion-button expand="block" (click)="mostrarMensaje('Código QR no válido.', false)" color="danger" class="ion-margin">
-    Simular Error
-  </ion-button>
-
-  <!-- Mensaje de resultado -->
-  <div *ngIf="mensaje" class="mensaje-aviso" [ngClass]="{ 'success': qrValidado, 'error': !qrValidado }">
-    {{ mensaje }}
+  <!-- Mostrar el código QR generado -->
+  <div *ngIf="qrImage">
+    <img [src]="qrImage" alt="QR Code">
   </div>
 </ion-content>

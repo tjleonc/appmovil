@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Itemlist } from 'src/app/interfaces/itemlist';
+
 
 @Component({
   selector: 'app-asistencia',
@@ -11,5 +13,28 @@ export class AsistenciaPage implements OnInit {
 
   ngOnInit() {
   }
+
+  vinculos:Itemlist[]=[{
+    ruta:'/qr',
+    titulo:'Apps moviles ',
+    icono:'caret-forward-sharp'
+  },
+    {
+      ruta:'/qr',
+      titulo:'Apps moviles seccion 2',
+      icono:'caret-forward-sharp'
+
+  },
+  {
+    ruta:'/qr',
+    titulo:'Apps moviles seccion 3',
+    icono:'caret-forward-sharp'
+  },
+  {
+    ruta:'/qr',
+    titulo:'Apps moviles seccion 4',
+    icono:'caret-forward-sharp'
+  }
+];
 
 }

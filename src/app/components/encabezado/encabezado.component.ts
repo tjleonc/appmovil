@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-encabezado',
@@ -8,8 +10,12 @@ import { Component, OnInit } from '@angular/core';
 export class EncabezadoComponent  implements OnInit {
   titulo: any;
 
-  constructor() { }
+  constructor(private navCtrl: NavController) { }
 
   ngOnInit() {}
+
+  goBack() {
+    this.navCtrl.back(); // Navega a la página anterior
+  }
 
 }

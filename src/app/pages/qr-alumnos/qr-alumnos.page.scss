@@ -1,0 +1,28 @@
+ion-content {
+    --ion-background-color: #07012B;
+    height: 100%;
+    color: white;
+  }
+  
+  .asistencia-aviso {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  .mensaje-aviso {
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .success {
+    background-color: #28a745; /* Verde para éxito */
+  }
+  
+  .error {
+    background-color: #dc3545; /* Rojo para error */
+  }

@@ -8,12 +8,20 @@ import { QrPageRoutingModule } from './qr-routing.module';
 
 import { QrPage } from './qr.page';
 
+
+import { ComponentsModule } from 'src/app/components/components.module';
+import { ZXingScannerModule } from '@zxing/ngx-scanner';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
     QrPageRoutingModule
+    QrPageRoutingModule,
+    ComponentsModule,
+    ZXingScannerModule
+
   ],
   declarations: [QrPage]
 })

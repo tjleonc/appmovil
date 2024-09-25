@@ -1,0 +1,25 @@
+ion-content{
+    --ion-background-color: #07012B;
+    height: 100%;
+}
+
+.margin-label{
+    margin:1.5rem;
+}
+
+.page-content {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 50vh; /* Altura de la ventana */
+  }
+  
+  .list-container {
+    width: 100%;
+    max-width: 600px; /* Puedes ajustar el ancho máximo de la lista */
+  }
+  
+  .ion-list {
+    width: 100%; /* Hace que la lista ocupe todo el contenedor */
+  }
+  
